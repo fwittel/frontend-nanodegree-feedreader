@@ -67,12 +67,10 @@ $(function() {
             loadFeed(feedId1, function() {
                 // Save first feed's label
                 feedLabel1 = document.querySelector('.header-title').innerHTML;
-                console.log(feedLabel1);
                 // Load second feed
                 loadFeed(feedId2, function() {
                     // Save second feed's label
                     feedLabel2 = document.querySelector('.header-title').innerHTML;
-                                    console.log(feedLabel2);
                     done();
                 });                    
             });
